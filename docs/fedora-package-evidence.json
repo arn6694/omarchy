@@ -1,0 +1,3188 @@
+{
+  "sources": {
+    "fedora": "https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Everything/x86_64/os/",
+    "updates": "https://dl.fedoraproject.org/pub/fedora/linux/updates/44/Everything/x86_64/",
+    "hyprland-copr": "https://copr-be.cloud.fedoraproject.org/results/nett00n/hyprland/fedora-44-x86_64/",
+    "rpmfusion-free": "https://download1.rpmfusion.org/free/fedora/releases/44/Everything/x86_64/os/",
+    "rpmfusion-free-updates": "https://download1.rpmfusion.org/free/fedora/updates/44/x86_64/",
+    "rpmfusion-nonfree": "https://download1.rpmfusion.org/nonfree/fedora/releases/44/Everything/x86_64/os/",
+    "rpmfusion-nonfree-updates": "https://download1.rpmfusion.org/nonfree/fedora/updates/44/x86_64/"
+  },
+  "packages": {
+    "alsa-utils": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.2.15.2",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.2.16",
+        "rel": "1.fc44"
+      }
+    ],
+    "avahi": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.9~rc2",
+        "rel": "8.fc44"
+      }
+    ],
+    "bash-completion": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "1",
+        "ver": "2.17",
+        "rel": "2.fc44"
+      }
+    ],
+    "bat": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.1",
+        "rel": "4.fc44"
+      }
+    ],
+    "bluez": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.86",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.87+1.git8750129efca8",
+        "rel": "1.fc44"
+      }
+    ],
+    "bluez-tools": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.0",
+        "rel": "0.30.git20170912.7cb788c.fc44"
+      }
+    ],
+    "bolt": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.9.10",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.9.11",
+        "rel": "1.fc44"
+      }
+    ],
+    "brightnessctl": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.5.1",
+        "rel": "16.fc44"
+      }
+    ],
+    "btop": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.6",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.7",
+        "rel": "1.fc44"
+      }
+    ],
+    "chromium": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "146.0.7680.164",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "152.0.7977.82",
+        "rel": "1.fc44"
+      }
+    ],
+    "clang": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "22.1.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "22.1.8",
+        "rel": "4.fc44"
+      }
+    ],
+    "cups": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2.4.16",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2.4.19",
+        "rel": "3.fc44"
+      }
+    ],
+    "cups-filters": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2.0.1",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2.0.1",
+        "rel": "17.fc44"
+      }
+    ],
+    "cups-pk-helper": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.7",
+        "rel": "12.fc44"
+      }
+    ],
+    "ddcutil": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.2.1",
+        "rel": "3.fc44"
+      }
+    ],
+    "moby-engine": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "29.3.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "29.7.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "docker-cli": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "29.3.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "29.7.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "docker-buildx": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.31.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.37.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "docker-compose": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.5.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "dosfstools": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.2",
+        "rel": "18.fc44"
+      }
+    ],
+    "dua-cli": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.32.2",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.38.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "evince": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "48.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "48.1",
+        "rel": "5.fc44"
+      }
+    ],
+    "exfatprogs": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "eza": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.23.4",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.23.5",
+        "rel": "1.fc44"
+      }
+    ],
+    "fakeroot": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.37.1",
+        "rel": "4.fc44"
+      }
+    ],
+    "fastfetch": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.60.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.66.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "fcitx5": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.19",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.21",
+        "rel": "1.fc44"
+      }
+    ],
+    "fcitx5-gtk": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.6",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.7",
+        "rel": "1.fc44"
+      }
+    ],
+    "fcitx5-qt": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.13",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.14",
+        "rel": "3.fc44"
+      }
+    ],
+    "fd-find": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "10.4.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "10.4.2",
+        "rel": "4.fc44"
+      }
+    ],
+    "ffmpegthumbnailer": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.3.0",
+        "rel": "2.fc44"
+      }
+    ],
+    "fontconfig": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.17.0",
+        "rel": "4.fc44"
+      }
+    ],
+    "foot": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.26.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.27.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "fzf": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.67.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.74.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "git": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.53.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.55.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "gnome-keyring": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "50.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "grim": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.5.0",
+        "rel": "3.fc44"
+      }
+    ],
+    "gum": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.17.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.17.0",
+        "rel": "3.fc44"
+      }
+    ],
+    "gvfs-mtp": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.60.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.60.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "gvfs-nfs": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.60.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.60.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "gvfs-smb": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.60.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.60.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "hyprland": [
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "13.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "8.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "8.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "8.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.56.2",
+        "rel": "9.fc44"
+      }
+    ],
+    "hyprland-guiutils": [
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.2",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.2",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.2",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.2",
+        "rel": "8.fc44"
+      }
+    ],
+    "hyprpicker": [
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "11.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "12.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "14.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.7",
+        "rel": "14.fc44"
+      }
+    ],
+    "hyprsunset": [
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "10.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "10.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "10.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "10.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "10.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4.0",
+        "rel": "8.fc44"
+      }
+    ],
+    "ImageMagick": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "7.1.2.13",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "7.1.2.27",
+        "rel": "1.fc44"
+      }
+    ],
+    "imv": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.0.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "inotify-tools": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.23.9.0",
+        "rel": "6.fc44"
+      }
+    ],
+    "inxi": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.3.40",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.3.41",
+        "rel": "1.fc44"
+      }
+    ],
+    "NetworkManager": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "1.56.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "1.56.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "jq": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.8.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.8.1",
+        "rel": "3.fc44"
+      }
+    ],
+    "kdenlive": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "25.12.3",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.08.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "less": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "691",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "704",
+        "rel": "4.fc44"
+      }
+    ],
+    "libsecret": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.21.7",
+        "rel": "10.fc44"
+      }
+    ],
+    "vips": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.18.0",
+        "rel": "6.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.18.3",
+        "rel": "2.fc44"
+      }
+    ],
+    "libyaml": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.5",
+        "rel": "18.fc44"
+      }
+    ],
+    "libreoffice": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "26.2.1.2",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "26.2.6.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "llvm": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "22.1.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "22.1.8",
+        "rel": "4.fc44"
+      }
+    ],
+    "compat-lua": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.1.5",
+        "rel": "31.fc44"
+      }
+    ],
+    "luarocks": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.9.2",
+        "rel": "9.fc44"
+      }
+    ],
+    "man-db": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.13.1",
+        "rel": "3.fc44"
+      }
+    ],
+    "mariadb-connector-c": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.4.8",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.4.9",
+        "rel": "2.fc44"
+      }
+    ],
+    "mpv": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.41.0",
+        "rel": "5.fc44"
+      }
+    ],
+    "mpv-mpris": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.2",
+        "rel": "2.fc44"
+      }
+    ],
+    "nautilus": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "50.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "50.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "nautilus-python": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.1.0",
+        "rel": "2.fc44"
+      }
+    ],
+    "gnome-disk-utility": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "46.1",
+        "rel": "4.fc44"
+      }
+    ],
+    "google-noto-sans-fonts": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20251201",
+        "rel": "2.fc44"
+      }
+    ],
+    "google-noto-serif-fonts": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20251201",
+        "rel": "2.fc44"
+      }
+    ],
+    "google-noto-sans-mono-fonts": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20251201",
+        "rel": "2.fc44"
+      }
+    ],
+    "google-noto-sans-cjk-fonts": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "1",
+        "ver": "2.004",
+        "rel": "11.fc44"
+      }
+    ],
+    "google-noto-color-emoji-fonts": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20250623",
+        "rel": "4.fc44"
+      }
+    ],
+    "nss-mdns": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.15.1",
+        "rel": "28.fc44"
+      }
+    ],
+    "neovim": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.11.6",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.12.5",
+        "rel": "1.fc44"
+      }
+    ],
+    "obs-studio": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "32.0.4",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "32.1.1",
+        "rel": "3.fc44"
+      }
+    ],
+    "pamixer": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6",
+        "rel": "7.fc44"
+      }
+    ],
+    "pinta": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.7.1",
+        "rel": "12.fc44"
+      }
+    ],
+    "plocate": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.1.24",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.1.25",
+        "rel": "2.fc44"
+      }
+    ],
+    "plymouth": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "24.004.60",
+        "rel": "24.fc44"
+      }
+    ],
+    "libpq": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "18.0",
+        "rel": "4.fc44"
+      }
+    ],
+    "power-profiles-daemon": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.30",
+        "rel": "3.fc44"
+      }
+    ],
+    "python3-gobject": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.56.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.56.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "python3-poetry-core": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.3.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "qemu-user-static": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "10.2.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "qrencode": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.1.1",
+        "rel": "12.fc44"
+      }
+    ],
+    "qt6-qtimageformats": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.10.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.11.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "qt6-qtmultimedia": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.10.2",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.11.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "quickshell": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.1^git20260209.dacfa9d",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.2.1^git20260209.dacfa9d",
+        "rel": "5.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.3.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.3.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.3.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.3.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.3.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.3.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "ripgrep": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "14.1.1",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "15.2.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "ruby": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.0.1",
+        "rel": "32.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.0.6",
+        "rel": "36.fc44"
+      }
+    ],
+    "sddm": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.21.0",
+        "rel": "13.fc44"
+      }
+    ],
+    "slurp": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.5.0",
+        "rel": "6.fc44"
+      }
+    ],
+    "socat": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.8.1.0",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.8.1.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "sushi": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "50~rc.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "50.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "system-config-printer": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.5.18",
+        "rel": "17.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.5.18",
+        "rel": "20.fc44"
+      }
+    ],
+    "tesseract": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.5.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.5.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "tesseract-langpack-eng": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "4.1.0",
+        "rel": "12.fc44"
+      }
+    ],
+    "tldr": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.4.4",
+        "rel": "1.fc44"
+      }
+    ],
+    "tree-sitter-cli": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.25.10",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.11",
+        "rel": "1.fc44"
+      }
+    ],
+    "tmux": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.6a",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.7c",
+        "rel": "1.fc44"
+      }
+    ],
+    "udiskie": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.6.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.7.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "firewalld": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.4.0",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.4.4",
+        "rel": "1.fc44"
+      }
+    ],
+    "unzip": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.0",
+        "rel": "69.fc44"
+      }
+    ],
+    "uwsm": [
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.7",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.7",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.7",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.7",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.26.7",
+        "rel": "2.fc44"
+      }
+    ],
+    "vim-minimal": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "9.2.240",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "9.2.1061",
+        "rel": "1.fc44"
+      }
+    ],
+    "whois": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.6.6",
+        "rel": "1.fc44"
+      }
+    ],
+    "wireless-regdb": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2026.02.04",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2026.09.03",
+        "rel": "1.fc44"
+      }
+    ],
+    "wireplumber": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.5.13",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.5.14",
+        "rel": "1.fc44"
+      }
+    ],
+    "wl-clipboard": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.2.1^git20251124.e808203",
+        "rel": "2.fc44"
+      }
+    ],
+    "wtype": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.4",
+        "rel": "11.fc44"
+      }
+    ],
+    "fontawesome-fonts-web": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "1",
+        "ver": "6.7.2",
+        "rel": "4.fc44"
+      }
+    ],
+    "xdg-desktop-portal-gtk": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.15.3",
+        "rel": "3.fc44"
+      }
+    ],
+    "xdg-desktop-portal-hyprland": [
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "6.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "6.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "6.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "6.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.1",
+        "rel": "9.fc44"
+      }
+    ],
+    "xdg-terminal-exec": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "0.14.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "xournalpp": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.3",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.7",
+        "rel": "1.fc44"
+      }
+    ],
+    "yaru-icon-theme": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "25.10.3",
+        "rel": "3.20251022git25.10.3.0ubuntu1.fc44"
+      }
+    ],
+    "yt-dlp": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2026.03.17",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2026.08.19",
+        "rel": "1.fc44"
+      }
+    ],
+    "zbar": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.23.93",
+        "rel": "10.fc44"
+      }
+    ],
+    "zoxide": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.9.8",
+        "rel": "2.fc44"
+      }
+    ],
+    "bash": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.3.9",
+        "rel": "3.fc44"
+      }
+    ],
+    "coreutils": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "9.10",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "9.10",
+        "rel": "5.fc44"
+      }
+    ],
+    "curl": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.18.0",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.18.0",
+        "rel": "10.fc44"
+      }
+    ],
+    "findutils": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "4.10.0",
+        "rel": "7.fc44"
+      }
+    ],
+    "gawk": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.3.2",
+        "rel": "3.fc44"
+      }
+    ],
+    "sed": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.9",
+        "rel": "7.fc44"
+      }
+    ],
+    "tar": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "1.35",
+        "rel": "8.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "1.35",
+        "rel": "9.fc44"
+      }
+    ],
+    "gzip": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.14",
+        "rel": "2.fc44"
+      }
+    ],
+    "util-linux": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.41.3",
+        "rel": "12.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.41.5",
+        "rel": "1.fc44"
+      }
+    ],
+    "procps-ng": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "4.0.6",
+        "rel": "1.fc44"
+      }
+    ],
+    "rpm": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.0.1",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.0.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "dnf5": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.4.1.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.4.4.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "dnf5-plugins": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.4.1.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.4.4.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "authselect": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.7.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "pipewire": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "pipewire-alsa": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "pipewire-pulseaudio": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "polkit": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "127",
+        "rel": "2.fc44.2"
+      }
+    ],
+    "qt6-qtdeclarative": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.10.2",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.11.2",
+        "rel": "2.fc44"
+      }
+    ],
+    "libxkbcommon-utils": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.13.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "lua": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "5.4.8",
+        "rel": "5.fc44"
+      }
+    ],
+    "xdg-user-dirs": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.18",
+        "rel": "11.fc43"
+      }
+    ],
+    "desktop-file-utils": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.28",
+        "rel": "5.fc44"
+      }
+    ],
+    "mesa-dri-drivers": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.0.3",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.1.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "mesa-vulkan-drivers": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.0.3",
+        "rel": "4.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.1.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "jetbrains-mono-fonts-all": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.304",
+        "rel": "10.fc44"
+      }
+    ],
+    "autoconf-archive": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2024.10.16",
+        "rel": "5.fc44"
+      }
+    ],
+    "akmod-wl": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.30.223.271",
+        "rel": "61.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.30.223.271",
+        "rel": "63.fc44"
+      }
+    ],
+    "btrfs-progs": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.19.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "7.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "dkms": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.3.0",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.4.3",
+        "rel": "2.fc44"
+      }
+    ],
+    "egl-wayland": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.1.21",
+        "rel": "2.fc44"
+      }
+    ],
+    "pipewire-gstreamer": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "gtk4-layer-shell": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "8.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "9.fc44"
+      },
+      {
+        "repo": "hyprland-copr",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.3.0",
+        "rel": "9.fc44"
+      }
+    ],
+    "pulseaudio-libs": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "17.0",
+        "rel": "9.fc44"
+      }
+    ],
+    "intel-lpmd": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.0.9",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.1.0^git20260608.40d18a6",
+        "rel": "1.fc44"
+      }
+    ],
+    "intel-media-driver": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "25.4.6",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.1.5",
+        "rel": "1.fc44"
+      }
+    ],
+    "libva-intel-driver": [
+      {
+        "repo": "rpmfusion-free",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.4.1^20241027gitd30e013",
+        "rel": "3.fc44"
+      }
+    ],
+    "libva-nvidia-driver": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.0.16",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.0.18",
+        "rel": "1.fc44"
+      }
+    ],
+    "kernel": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.19.10",
+        "rel": "300.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "7.2.5",
+        "rel": "200.fc44"
+      }
+    ],
+    "linux-firmware": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20260309",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20260910",
+        "rel": "1.fc44"
+      }
+    ],
+    "kernel-devel": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.19.10",
+        "rel": "300.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "7.2.5",
+        "rel": "200.fc44"
+      }
+    ],
+    "kernel-headers": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.19.6",
+        "rel": "300.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "7.2.4",
+        "rel": "200.fc44"
+      }
+    ],
+    "akmod-nvidia-580xx": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "580.142",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "580.178.04",
+        "rel": "1.fc44"
+      }
+    ],
+    "akmod-nvidia": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "595.58.03",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "610.57.04",
+        "rel": "1.fc44"
+      }
+    ],
+    "akmod-nvidia-open": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "595.58.03",
+        "rel": "2.fc44"
+      }
+    ],
+    "xorg-x11-drv-nvidia-580xx": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "580.142",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "580.178.04",
+        "rel": "1.fc44"
+      }
+    ],
+    "xorg-x11-drv-nvidia-580xx-cuda": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "580.142",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "580.178.04",
+        "rel": "1.fc44"
+      }
+    ],
+    "xorg-x11-drv-nvidia": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "595.58.03",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "610.57.04",
+        "rel": "1.fc44"
+      }
+    ],
+    "xorg-x11-drv-nvidia-cuda": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "595.58.03",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "3",
+        "ver": "610.57.04",
+        "rel": "1.fc44"
+      }
+    ],
+    "pipewire-jack-audio-connection-kit": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.6.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "qt6-qtwayland": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.10.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "6.11.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "snapper": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.13.0",
+        "rel": "3.fc44"
+      }
+    ],
+    "alsa-sof-firmware": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2025.12.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "thermald": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.5.9",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.5.12",
+        "rel": "3.fc44"
+      }
+    ],
+    "zram-generator": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.2.1",
+        "rel": "5.fc44"
+      }
+    ],
+    "libvpl": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2.16.0",
+        "rel": "2.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2.17.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "intel-vpl-gpu-rt": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.1.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "26.1.6",
+        "rel": "1.fc44"
+      }
+    ],
+    "lsp-plugins-lv2": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.2.27",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.2.29",
+        "rel": "1.fc44"
+      }
+    ],
+    "alacritty": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.16.1",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.17.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "composer": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.9.5",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "2.10.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "dropbox": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2026.01.15",
+        "rel": "1.fc44"
+      }
+    ],
+    "emacs": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "30.2",
+        "rel": "16.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "30.2",
+        "rel": "29.fc44"
+      }
+    ],
+    "firefox": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "150.0",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "155.0",
+        "rel": "1.fc44"
+      }
+    ],
+    "flatpak": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.17.6",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.18.2",
+        "rel": "1.fc44"
+      }
+    ],
+    "fprintd": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.94.5",
+        "rel": "5.fc44"
+      }
+    ],
+    "fprintd-pam": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.94.5",
+        "rel": "5.fc44"
+      }
+    ],
+    "freerdp": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "3.24.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "3.31.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "fwupd": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.1.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.1.7",
+        "rel": "1.fc44"
+      }
+    ],
+    "helix": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "25.07.1",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "25.07.1",
+        "rel": "11.fc44"
+      }
+    ],
+    "kitty": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.43.1",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.47.1",
+        "rel": "1.fc44"
+      }
+    ],
+    "libappindicator-gtk3": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "12.10.1",
+        "rel": "10.fc44"
+      }
+    ],
+    "libfido2": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.16.0",
+        "rel": "5.fc44"
+      }
+    ],
+    "libfprint": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.94.10",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.94.100",
+        "rel": "1.fc44"
+      }
+    ],
+    "libretro-beetle-pce-fast": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0",
+        "rel": "0.10.28.20251224git7e9b257.fc44"
+      }
+    ],
+    "retroarch-database": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "1.22.0",
+        "rel": "20.fc44"
+      }
+    ],
+    "libretro-gambatte": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0",
+        "rel": "0.9.29.20240507git04486b4.fc44"
+      }
+    ],
+    "libretro-mgba": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.1.1",
+        "rel": "0.9.28.20240513gitb256448.fc44"
+      }
+    ],
+    "libretro-nestopia": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0",
+        "rel": "0.9.27.20240514gitb99ede3.fc44"
+      }
+    ],
+    "lutris": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.5.22",
+        "rel": "1.fc44"
+      }
+    ],
+    "nautilus-dropbox": [
+      {
+        "repo": "rpmfusion-nonfree",
+        "arch": "x86_64",
+        "epoch": "1",
+        "ver": "2026.01.15",
+        "rel": "1.fc44"
+      }
+    ],
+    "ollama": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.12.11",
+        "rel": "4.fc44"
+      }
+    ],
+    "nmap-ncat": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "4",
+        "ver": "7.92",
+        "rel": "8.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "4",
+        "ver": "7.92",
+        "rel": "11.fc44"
+      }
+    ],
+    "openssh-clients": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "10.2p1",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "10.2p1",
+        "rel": "14.fc44"
+      }
+    ],
+    "openssh-server": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "10.2p1",
+        "rel": "7.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "10.2p1",
+        "rel": "14.fc44"
+      }
+    ],
+    "pam-u2f": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.4.0",
+        "rel": "3.fc44"
+      }
+    ],
+    "php": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.5.4",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.5.10",
+        "rel": "1.fc44"
+      }
+    ],
+    "php-pdo": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.5.4",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "8.5.10",
+        "rel": "1.fc44"
+      }
+    ],
+    "python3-gpg": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.0.1",
+        "rel": "3.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "2.0.1",
+        "rel": "5.fc44"
+      }
+    ],
+    "python3-protobuf": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "3.19.6",
+        "rel": "20.fc44"
+      }
+    ],
+    "retroarch": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.22.0",
+        "rel": "20.fc44"
+      }
+    ],
+    "retroarch-assets": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "1.22.0",
+        "rel": "20.fc44"
+      }
+    ],
+    "rlwrap": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "0.47.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "steam": [
+      {
+        "repo": "rpmfusion-nonfree-updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.0.0.87",
+        "rel": "1.fc44"
+      }
+    ],
+    "tailscale": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.94.2",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.98.8",
+        "rel": "1.fc44"
+      }
+    ],
+    "usbutils": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "019",
+        "rel": "2.fc44"
+      }
+    ],
+    "vim-enhanced": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "9.2.240",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "2",
+        "ver": "9.2.1061",
+        "rel": "1.fc44"
+      }
+    ],
+    "wine-mono": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "10.4.1",
+        "rel": "2.fc44"
+      }
+    ],
+    "winetricks": [
+      {
+        "repo": "fedora",
+        "arch": "noarch",
+        "epoch": "0",
+        "ver": "20260125",
+        "rel": "1.fc44"
+      }
+    ],
+    "php-pecl-xdebug3": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.5.1",
+        "rel": "1.fc44"
+      },
+      {
+        "repo": "updates",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "3.5.3",
+        "rel": "1.fc44"
+      }
+    ],
+    "ydotool": [
+      {
+        "repo": "fedora",
+        "arch": "x86_64",
+        "epoch": "0",
+        "ver": "1.0.4",
+        "rel": "8.fc44"
+      }
+    ]
+  }
+}

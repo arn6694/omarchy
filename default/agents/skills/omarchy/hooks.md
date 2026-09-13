@@ -15,7 +15,7 @@ file first, if one exists.
 ├── font-set.d/             # After font change (font name in $1)
 ├── post-boot.d/            # After the desktop starts
 ├── post-update.d/          # During `omarchy update`, after system packages and migrations
-├── pre-refresh-pacman.d/   # Before `omarchy refresh pacman` re-syncs packages
+├── pre-refresh-dnf.d/      # Before `omarchy refresh dnf` refreshes metadata
 └── theme-set.d/            # After theme change (theme slug in $1)
 ```
 

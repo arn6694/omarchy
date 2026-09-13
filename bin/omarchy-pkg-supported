@@ -1,0 +1,5 @@
+#!/bin/bash
+# omarchy:summary=Check whether a package request is supported by the Fedora mapping
+# omarchy:args=<packages...>
+# omarchy:hidden=true
+omarchy-pkg-resolve "$@" >/dev/null 2>&1

@@ -29,8 +29,8 @@ while (($#)); do
 done
 
 OMARCHY_PATH="${OMARCHY_PATH:-/usr/share/omarchy}"
-STATE_DIR="${OMARCHY_MIGRATION_STATE:-$HOME/.local/state/omarchy/migrations}"
-MIGRATIONS_DIR="$OMARCHY_PATH/migrations"
+STATE_DIR="${OMARCHY_MIGRATION_STATE:-$HOME/.local/state/omarchy/fedora-migrations}"
+MIGRATIONS_DIR="$OMARCHY_PATH/install/fedora/migrations"
 
 migration_entries() {
   [[ -d $MIGRATIONS_DIR ]] || return 0
@@ -64,23 +64,6 @@ if [[ $mode == "pending" ]]; then
     exit 1
   fi
 fi
-
-wait_for_pacman_transaction() {
-  local lock_file=/var/lib/pacman/db.lck
-
-  [[ -e $lock_file ]] || return 0
-  echo "Waiting for pacman transaction to finish before running Omarchy migrations..."
-
-  for _ in {1..900}; do
-    [[ -e $lock_file ]] || return 0
-    sleep 1
-  done
-
-  echo "Pacman transaction is still running; Omarchy migrations will retry on next login."
-  exit 0
-}
-
-wait_for_pacman_transaction
 
 mkdir -p "$STATE_DIR"
 [[ -d $MIGRATIONS_DIR ]] || exit 0

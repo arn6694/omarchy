@@ -1,9 +1,7 @@
 #!/bin/bash
+# omarchy:summary=Install Fedora Emacs
 
-# omarchy:summary=Install Emacs with Omarchy theme and font integration via the omarchy-emacs AUR package
-
-echo "Installing Emacs..."
-omarchy-pkg-aur-add omarchy-emacs && omarchy-install-emacs
-
-# emacsclient opens a frame on the running daemon, not a second Emacs
-setsid uwsm-app -- gtk-launch emacsclient >/dev/null 2>&1 &
+set -euo pipefail
+omarchy-pkg-add emacs
+echo 'The upstream custom Emacs configuration package is omitted; Fedora Emacs is installed.'
+setsid uwsm-app -- emacs >/dev/null 2>&1 &

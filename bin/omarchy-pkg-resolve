@@ -1,0 +1,21 @@
+#!/bin/bash
+# omarchy:summary=Resolve package names to verified Fedora RPM names
+# omarchy:args=<packages...>
+# omarchy:hidden=true
+set -euo pipefail
+for package in "$@"; do
+  if [[ ! $package =~ ^[a-zA-Z0-9][a-zA-Z0-9+_.-]*$ ]]; then
+    echo "Expected an RPM package name: $package" >&2
+    exit 2
+  fi
+  mapped=$(awk -F '\t' -v name="$package" '$1 == name { print $2; exit }' "$OMARCHY_PATH/install/fedora/package-map.tsv")
+  if [[ $mapped == "-" ]]; then
+    echo "Omarchedora omits '$package': no verified Fedora RPM. See docs/fedora-package-map.md." >&2
+    exit 3
+  elif [[ -n $mapped ]]; then
+    read -r -a names <<< "$mapped"
+    printf '%s\n' "${names[@]}"
+  else
+    printf '%s\n' "$package"
+  fi
+done

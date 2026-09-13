@@ -16,7 +16,7 @@ function wifiIconFor(strength) {
 
 // A known plain-HTTP endpoint lets the network redirect the browser to its
 // login page. Never execute or automatically open an untrusted Location header.
-var captivePortalUrl = "http://ping.archlinux.org/nm-check.txt"
+var captivePortalUrl = "http://fedoraproject.org/static/hotspot.txt"
 
 function connectivityState(kind, connectivity, states, checksEnabled) {
   if (kind === "disconnected") return "none"

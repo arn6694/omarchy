@@ -37,7 +37,7 @@ fi
 cat > "$LOG_FILE" <<EOF
 Date: $(date)
 Hostname: $(hostname)
-Omarchy Package: $(pacman -Q omarchy-dev 2>/dev/null || pacman -Q omarchy 2>/dev/null || echo "unknown")
+Omarchy Package: $(omarchy-version 2>/dev/null || echo "unknown")
 
 =========================================
 SYSTEM INFORMATION
@@ -57,7 +57,7 @@ $(journalctl -b -p 4..1)
 =========================================
 INSTALLED PACKAGES
 =========================================
-$({ expac -S '%n %v (%r)' $(pacman -Qqe) 2>/dev/null; comm -13 <(pacman -Sql | sort) <(pacman -Qqe | sort) | xargs -r expac -Q '%n %v (AUR)'; } | sort)
+$(rpm -qa --queryformat '%{NAME} %{VERSION}-%{RELEASE}\n' | sort)
 EOF
 
 if [[ $PRINT_ONLY = "true" ]]; then

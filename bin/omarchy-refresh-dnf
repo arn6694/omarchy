@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# omarchy:summary=Refresh enabled Fedora repository metadata
+# omarchy:requires-sudo=true
+
+omarchy-hook pre-refresh-dnf
+exec omarchy-update-dnf makecache --refresh

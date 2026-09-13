@@ -1,4 +1,25 @@
-# Omarchy
+# Omarchedora
+
+An experimental Fedora Server 44 port of Omarchy's `quattro` branch for x86_64 PCs. The desktop keeps Omarchy's key assignments, including **Super+K / Command+K** for its interactive cheat sheet.
+
+**Status: source port in progress. No Fedora boot test or RPM build has completed yet.** See [build status](docs/fedora-status.md), [package mappings](docs/fedora-package-map.md), [omitted features](docs/fedora-omitted-features.md), and [omitted install menus](docs/fedora-omitted-menu.md).
+
+The intended fork owner is `arn9999`; remote creation is pending authentication. Upstream history is preserved locally.
+
+On a disposable Fedora Server 44 x86_64 installation:
+
+```bash
+bash install.sh --check     # Read-only package availability check using enabled repositories
+bash install.sh --install   # Enable repositories, build/install RPM, and configure the desktop
+```
+
+The installer uses Fedora, RPM Fusion, and `nett00n/hyprland` COPR RPMs. Packages without verified equivalents are omitted and listed for review. It targets an already installed Fedora system; it does not partition a drive or install the base OS.
+
+Runtime command names and paths retain `omarchy` for compatibility with the original hotkeys and themes. The RPM and login session are named Omarchedora. Existing user configuration is backed up before setup.
+
+The remainder of this document and the existing `manual/` tree describe **upstream Omarchy**. They are reference material; use the Fedora status and installation notes above for this port. Upstream Arch installer and migration source remains in the repository but is excluded from the Fedora RPM.
+
+## Upstream Omarchy
 
 Omarchy is a beautiful, fun & agentic Linux distribution by DHH.
 

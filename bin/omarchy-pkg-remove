@@ -5,7 +5,7 @@
 
 fzf_args=(
   --multi
-  --preview 'yay -Qi {1}'
+  --preview 'rpm -qi -- {1}'
   --preview-label='alt-p: toggle description, alt-j/k: scroll, tab: multi-select'
   --preview-label-pos='bottom'
   --preview-window 'down:65%:wrap'
@@ -15,10 +15,11 @@ fzf_args=(
   --color 'pointer:red,marker:red'
 )
 
-pkg_names=$(yay -Qqe | fzf "${fzf_args[@]}")
+set -o pipefail
+pkg_names=$(dnf -q repoquery --installed --userinstalled --queryformat '%{name}\n' | sort -u | fzf "${fzf_args[@]}") || exit $?
 
 if [[ -n $pkg_names ]]; then
-  # Convert newline-separated selections to space-separated for yay
-  echo "$pkg_names" | tr '\n' ' ' | xargs sudo pacman -Rns --noconfirm
+  mapfile -t packages <<< "$pkg_names"
+  omarchy-pkg-drop "${packages[@]}"
   omarchy-show-done $?
 fi
