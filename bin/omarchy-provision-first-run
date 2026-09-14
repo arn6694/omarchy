@@ -6,6 +6,6 @@ omarchy-provision-user
 marker="$HOME/.local/state/omarchy/fedora-first-login"
 [[ ! -f $marker ]] || exit 0
 systemctl --user enable --now pipewire.socket pipewire-pulse.socket wireplumber.service
-omarchy-notification-send 'Welcome to Omarchedora' 'Press Super + K (Command + K) for the Omarchy cheat sheet.'
+omarchy-notification-send 'Welcome to Omadora' 'Press Super + K (Command + K) for the Omarchy cheat sheet.'
 mkdir -p "$(dirname "$marker")"
 touch "$marker"

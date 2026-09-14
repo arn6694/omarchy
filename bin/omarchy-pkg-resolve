@@ -10,7 +10,7 @@ for package in "$@"; do
   fi
   mapped=$(awk -F '\t' -v name="$package" '$1 == name { print $2; exit }' "$OMARCHY_PATH/install/fedora/package-map.tsv")
   if [[ $mapped == "-" ]]; then
-    echo "Omarchedora omits '$package': no verified Fedora RPM. See docs/fedora-package-map.md." >&2
+    echo "Omadora omits '$package': no verified Fedora RPM. See docs/fedora-package-map.md." >&2
     exit 3
   elif [[ -n $mapped ]]; then
     read -r -a names <<< "$mapped"

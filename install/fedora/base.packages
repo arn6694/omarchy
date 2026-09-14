@@ -143,3 +143,5 @@ yaru-icon-theme
 yt-dlp
 zbar
 zoxide
+perl-JSON-PP
+python3-pyxdg

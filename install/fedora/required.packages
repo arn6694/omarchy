@@ -23,3 +23,5 @@ wireplumber
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-terminal-exec
+perl-JSON-PP
+python3-pyxdg

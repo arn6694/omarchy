@@ -3,5 +3,5 @@
 # omarchy:summary=Report an omitted Fedora feature
 # omarchy:hidden=true
 
-printf '%s\n' 'Cross-distribution upgrades are not supported. Install Omarchedora onto an existing Fedora Server 44 system.' >&2
+printf '%s\n' 'Cross-distribution upgrades are not supported. Install Omadora onto an existing Fedora Server 44 system.' >&2
 exit 69

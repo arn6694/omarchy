@@ -1,5 +1,5 @@
 #!/bin/bash
-# omarchy:summary=Set up Omarchedora configuration for the current Fedora user
+# omarchy:summary=Set up Omadora configuration for the current Fedora user
 # omarchy:hidden=true
 
 set -euo pipefail

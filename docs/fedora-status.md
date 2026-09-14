@@ -1,4 +1,4 @@
-# Omarchedora build status
+# Omadora build status
 
 ## Target and provenance
 
@@ -30,4 +30,4 @@ Checks completed on Fedora 44 in GitHub Actions: the full upstream CLI suite, DN
 
 This is an experimental source port, not a release-ready image or a tested Fedora installation. The retained upstream manual and legacy setup directories are reference material; the Fedora installation entry point is `install.sh`.
 
-The default application set is installed alongside the Omarchedora RPM. Only core desktop/runtime requirements are RPM dependencies, so removing an optional application does not inherently require removing the desktop package.
+The default application set is installed alongside the Omadora RPM. Only core desktop/runtime requirements are RPM dependencies, so removing an optional application does not inherently require removing the desktop package.

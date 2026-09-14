@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# omarchy:summary=Update Omarchedora's Fedora system packages
+# omarchy:summary=Update Omadora's Fedora system packages
 # omarchy:args=[-y]
 # omarchy:requires-sudo=true
 
@@ -15,5 +15,5 @@ if ! omarchy-update-lock held; then
 fi
 omarchy-update-system-pkgs
 omarchy-hook post-update
-echo "Fedora packages updated. Omarchedora source updates must be installed from the reviewed fork."
+echo "Fedora packages updated. Omadora source updates must be installed from the reviewed fork."
 echo "Reboot after kernel, graphics driver, or compositor updates."

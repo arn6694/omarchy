@@ -1,10 +1,10 @@
-# Omarchedora
+# Omadora
 
 An experimental Fedora Server 44 port of Omarchy's `quattro` branch for x86_64 PCs. The desktop keeps Omarchy's key assignments, including **Super+K / Command+K** for its interactive cheat sheet.
 
 **Status: source port in progress. No Fedora boot test or RPM build has completed yet.** See [build status](docs/fedora-status.md), [package mappings](docs/fedora-package-map.md), [omitted features](docs/fedora-omitted-features.md), and [omitted install menus](docs/fedora-omitted-menu.md).
 
-The Omarchedora fork is [arn6694/omarchy](https://github.com/arn6694/omarchy), with the Fedora port on `codex/fedora-port`. Upstream history is preserved.
+The Omadora fork is [arn6694/omarchy](https://github.com/arn6694/omarchy), with the Fedora port on `codex/fedora-port`. Upstream history is preserved.
 
 On a disposable Fedora Server 44 x86_64 installation:
 
@@ -15,7 +15,7 @@ bash install.sh --install   # Enable repositories, build/install RPM, and config
 
 The installer uses Fedora, RPM Fusion, and `nett00n/hyprland` COPR RPMs. Packages without verified equivalents are omitted and listed for review. It targets an already installed Fedora system; it does not partition a drive or install the base OS.
 
-Runtime command names and paths retain `omarchy` for compatibility with the original hotkeys and themes. The RPM and login session are named Omarchedora. Existing user configuration is backed up before setup.
+Runtime command names and paths retain `omarchy` for compatibility with the original hotkeys and themes. The product and login-session display name are Omadora. The RPM identifier remains `omarchedora` for upgrade compatibility. Existing user configuration is backed up before setup.
 
 The remainder of this document and the existing `manual/` tree describe **upstream Omarchy**. They are reference material; use the Fedora status and installation notes above for this port. Upstream Arch installer and migration source remains in the repository but is excluded from the Fedora RPM.
 
@@ -98,3 +98,7 @@ its screenshots are also hosted.
 ## License
 
 Omarchy is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Workstation customization
+
+See [the Omadora workstation profile](docs/fedora-workstation.md) for native desktop apps, Steam, WezTerm, Nerd Fonts, LazyVim, equal tiling, keyboard shortcuts, and the red-fedora lock screen.

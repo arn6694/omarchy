@@ -3,7 +3,7 @@
 - `omarchy-channel-set`: Upstream release channels are not Fedora repositories. This build uses Fedora 44.
 - `omarchy-system-factory-reset`: The upstream factory-reset disk layout has no verified Fedora equivalent. Reinstall using Fedora media.
 - `omarchy-provision-owner`: Deferred ISO owner provisioning is not included. Create the user in Fedora Server's installer.
-- `omarchy-upgrade-to-quattro`: Cross-distribution upgrades are not supported. Install Omarchedora onto an existing Fedora Server 44 system.
+- `omarchy-upgrade-to-quattro`: Cross-distribution upgrades are not supported. Install Omadora onto an existing Fedora Server 44 system.
 - `omarchy-dev-pkg-test`: The upstream package-builder environment is not included in the Fedora port.
 - `omarchy-hibernation-setup`: Automatic hibernation provisioning is omitted pending a Fedora swap and encryption configuration review.
 - `omarchy-hibernation-remove`: Automatic hibernation configuration removal is omitted; Fedora owns the swap and resume configuration.

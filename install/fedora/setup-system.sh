@@ -9,4 +9,4 @@ omarchy-apply-lock
 systemctl enable NetworkManager.service firewalld.service bluetooth.service power-profiles-daemon.service sddm.service
 systemctl set-default graphical.target
 restorecon -RF /usr/share/omarchy /etc/pam.d/omarchy-lock-password
-echo 'Omarchedora session enabled. Log out or reboot when ready.'
+echo 'Omadora session enabled. Log out or reboot when ready.'

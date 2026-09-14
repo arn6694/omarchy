@@ -34,12 +34,13 @@ echo 'Default RPM names are available. See docs/fedora-package-map.md for omitte
 [[ $mode == "--install" ]] || exit 0
 bash "$root/packaging/build-rpm.sh"
 mapfile -t rpms < <(find "$root/build/RPMS" -name 'omarchedora-*.noarch.rpm' -type f)
-(( ${#rpms[@]} == 1 )) || { echo 'Expected exactly one built Omarchedora RPM.' >&2; exit 1; }
+(( ${#rpms[@]} == 1 )) || { echo 'Expected exactly one built Omadora RPM.' >&2; exit 1; }
 mapfile -t packages < <(grep -Ev '^(#|$)' "$root/install/fedora/base.packages")
 sudo dnf install "${rpms[0]}" "${packages[@]}"
+bash "$root/install/fedora/chrome.sh"
 sudo bash /usr/share/omarchy/install/fedora/setup-system.sh
 export OMARCHY_PATH=/usr/share/omarchy
 export PATH="$OMARCHY_PATH/bin:$PATH"
 bash "$OMARCHY_PATH/install/fedora/setup-user.sh"
-echo 'Select Omarchedora at the login screen after rebooting.'
+echo 'Select Omadora at the login screen after rebooting.'
 echo 'RTX 3050 users: run bash /usr/share/omarchy/install/fedora/nvidia.sh to install RPM Fusion drivers.'

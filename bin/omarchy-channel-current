@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# omarchy:summary=Print the Omarchedora release channel
+# omarchy:summary=Print the Omadora release channel
 
 echo 'fedora-44'

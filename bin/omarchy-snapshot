@@ -9,9 +9,9 @@ case "${1:-}" in
     mapfile -t names < <(awk -F, 'NR>1 {print $1}' <<< "$configs")
     (( ${#names[@]} )) || { echo 'Configure Snapper for your Fedora filesystem before creating snapshots.' >&2; exit 1; }
     for name in "${names[@]}"; do
-      sudo snapper -c "$name" create -d 'Omarchedora manual snapshot'
+      sudo snapper -c "$name" create -d 'Omadora manual snapshot'
     done
-    echo 'Snapshots created. Boot-menu recovery is not configured by Omarchedora.'
+    echo 'Snapshots created. Boot-menu recovery is not configured by Omadora.'
     ;;
   restore)
     echo 'Automatic bootable rollback is omitted for Fedora. Review your filesystem and Snapper recovery procedure.' >&2

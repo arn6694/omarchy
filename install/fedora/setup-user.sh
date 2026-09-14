@@ -4,7 +4,7 @@ if (( EUID == 0 )); then
   echo "Run user setup from the Fedora desktop user's account." >&2
   exit 1
 fi
-: "${OMARCHY_PATH:?Set OMARCHY_PATH to the installed Omarchedora directory}"
+: "${OMARCHY_PATH:?Set OMARCHY_PATH to the installed Omadora directory}"
 backup="$HOME/.local/state/omarchy/backups/$(date +%Y%m%d-%H%M%S)-$$"
 mkdir -p "$backup" "$HOME/.config" "$HOME/.local/share/applications"
 for source in "$OMARCHY_PATH/config/"*; do
@@ -18,7 +18,7 @@ done
 if ! grep -qF '/usr/share/omarchy/default/bash/rc' "$HOME/.bashrc" 2>/dev/null; then
   cat >> "$HOME/.bashrc" <<'EOF'
 
-# Omarchedora desktop shell defaults
+# Omadora desktop shell defaults
 source /usr/share/omarchy/default/bash/env-bootstrap
 [[ $- != *i* ]] || source /usr/share/omarchy/default/bash/rc
 EOF
@@ -27,7 +27,11 @@ cp -a --update=none -- "$OMARCHY_PATH/applications/." "$HOME/.local/share/applic
 xdg-user-dirs-update
 mkdir -p "$HOME/Pictures/Screenshots" "$HOME/Videos/Screencasts" "$HOME/.config/omarchy/themes"
 OMARCHY_THEME_HEADLESS=1 omarchy-theme-set 'Tokyo Night'
-xdg-settings set default-web-browser chromium.desktop
+if command -v google-chrome-stable >/dev/null; then
+  xdg-settings set default-web-browser google-chrome.desktop
+else
+  xdg-settings set default-web-browser chromium.desktop
+fi
 update-desktop-database "$HOME/.local/share/applications"
 touch "$HOME/.local/state/omarchy/fedora-user-ready"
 printf 'Existing configuration backed up to %s\n' "$backup"

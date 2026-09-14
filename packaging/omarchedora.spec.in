@@ -12,7 +12,7 @@ Requires:       dracut
 @FEDORA_REQUIRES@
 
 %description
-Omarchedora preserves the Omarchy quattro desktop and hotkey configuration
+Omadora preserves the Omarchy quattro desktop and hotkey configuration
 while using Fedora RPM packages. Some upstream features are omitted; consult
 the packaged Fedora port documentation before installation.
 
@@ -32,6 +32,7 @@ rm -rf %{buildroot}%{_datadir}/omarchy/default/libalpm
 rm -rf %{buildroot}%{_datadir}/omarchy/default/limine
 rm -rf %{buildroot}%{_datadir}/omarchy/config/omarchy/hooks/pre-refresh-pacman.d
 rm -f %{buildroot}%{_datadir}/omarchy/bin/omarchy-system-factory-reset-finish
+install -m755 install/fedora/workstation/uwsm-app %{buildroot}%{_bindir}/uwsm-app
 chmod 755 %{buildroot}%{_datadir}/omarchy/bin/*
 for command in %{buildroot}%{_datadir}/omarchy/bin/*; do
   ln -s %{_datadir}/omarchy/bin/$(basename "$command") %{buildroot}%{_bindir}/$(basename "$command")
@@ -40,10 +41,11 @@ ln -s %{_datadir}/omarchy/bin/omarchy %{buildroot}%{_bindir}/omarchedora
 install -Dm644 etc/profile.d/omarchy.sh %{buildroot}%{_sysconfdir}/profile.d/omarchedora.sh
 install -Dm644 default/uwsm/env.d/10-omarchy %{buildroot}%{_datadir}/uwsm/env.d/10-omarchy
 install -Dm644 default/wayland-sessions/omarchy.desktop %{buildroot}%{_datadir}/wayland-sessions/omarchedora.desktop
-sed -i 's/Omarchy/Omarchedora/g' %{buildroot}%{_datadir}/wayland-sessions/omarchedora.desktop
+sed -i 's/Omarchy/Omadora/g' %{buildroot}%{_datadir}/wayland-sessions/omarchedora.desktop
 install -Dm644 default/fonts/omarchy/omarchy.ttf %{buildroot}%{_datadir}/fonts/omarchedora/omarchy.ttf
 
 %files
+%{_bindir}/uwsm-app
 %license LICENSE
 %doc docs/fedora-package-map.md docs/fedora-omitted-features.md docs/fedora-omitted-menu.md install/fedora/README.md
 %{_bindir}/omarchy*

@@ -1,0 +1,3 @@
+#!/bin/bash
+# Compatibility with Omarchy launch commands on Fedora.
+exec /usr/bin/uwsm app "$@"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# omarchy:summary=Print the Omarchedora source version
+# omarchy:summary=Print the Omadora source version
 
 set -euo pipefail
-printf 'Omarchedora Fedora 44 / upstream %s\n' "$(cat "$OMARCHY_PATH/version")"
+printf 'Omadora Fedora 44 / upstream %s\n' "$(cat "$OMARCHY_PATH/version")"
