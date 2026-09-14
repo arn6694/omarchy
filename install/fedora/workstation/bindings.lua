@@ -4,14 +4,21 @@ o.rebind("SUPER + SHIFT + C", "Claude desktop", { launch = "claude-desktop", foc
 o.rebind("SUPER + SHIFT + G", "Grok Bot desktop", { launch = "grok-bot", focus = "^grok-bot$" })
 o.rebind("SUPER + SHIFT + H", "Hermes desktop", { launch = "hermes-desktop", focus = "^Hermes$" })
 o.rebind("SUPER + SHIFT + O", "Obsidian", { launch = "obsidian", focus = "^md.obsidian.Obsidian$" })
-o.rebind("SUPER + CTRL + G", "Equal-size tiles", function()
+-- Persist layout selection so saved workspace rules cannot restore scrolling.
+local function omadora_select_layout(layout)
   local ws = hl.get_active_workspace()
-  if ws then hl.workspace_rule({ workspace = tostring(ws.id), layout = "lua:omadora-equal" }) end
-end)
-o.rebind("SUPER + CTRL + SHIFT + L", "Resizable dwindle tiles", function()
-  local ws = hl.get_active_workspace()
-  if ws then hl.workspace_rule({ workspace = tostring(ws.id), layout = "dwindle" }) end
-end)
+  if not ws then return end
+  local paths = require("default.hypr.paths")
+  local path = paths.state_home .. "/omarchy/workspace-layouts/" .. tostring(ws.id) .. ".lua"
+  local file = assert(io.open(path, "w"))
+  file:write(string.format("hl.workspace_rule({ workspace = %q, layout = %q })\n", tostring(ws.id), layout))
+  file:close()
+  hl.workspace_rule({ workspace = tostring(ws.id), layout = layout })
+end
+
+o.rebind("SUPER + L", "Equal-size tiles", function() omadora_select_layout("lua:omadora-equal") end)
+o.rebind("SUPER + CTRL + G", "Equal-size tiles", function() omadora_select_layout("lua:omadora-equal") end)
+o.rebind("SUPER + CTRL + SHIFT + L", "Resizable dwindle tiles", function() omadora_select_layout("dwindle") end)
 
 -- Remove shortcuts for absent optional utilities.
 hl.unbind("SUPER + CTRL + Q")

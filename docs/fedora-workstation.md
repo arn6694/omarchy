@@ -17,7 +17,7 @@ The profile can be reapplied. It changes user preferences, including keyboard sh
 
 Super means Windows/Command. Super+Return opens WezTerm; Super+Shift+B opens Chrome; Super+Shift+F opens Files; Super+Shift+N opens Neovim. Super+Shift+A/C/G/H/O opens or focuses ChatGPT/Claude/Grok Bot/Hermes/Obsidian. Super+Shift+S opens Steam's library. Super+K shows the cheat sheet.
 
-Equal tiling is the default: two equal columns, three equal columns, four quadrants, larger counts in equal grid cells with unused cells in incomplete rows. Floating dialogs retain their size. Super+Ctrl+G selects equal tiling; Super+Ctrl+Shift+L selects resizable dwindle tiling. Per-workspace saved layout rules take precedence over the default. WezTerm's Fedora app ID is tagged as a terminal for correct copy/paste shortcuts.
+Equal tiling is the default: two equal columns, three equal columns, four quadrants, larger counts in equal grid cells with unused cells in incomplete rows. Floating dialogs retain their size. Super+L or Super+Ctrl+G selects and saves equal tiling; Super+Ctrl+Shift+L selects resizable dwindle tiling. Applying the profile backs up and clears old workspace layout overrides. Subsequent layout selections are saved per workspace. WezTerm's Fedora app ID is tagged as a terminal for correct copy/paste shortcuts.
 
 The lock view uses the supplied 3840×2160 red-fedora wallpaper, an unblurred background, AM/PM clock on the left, and Omadora branding without a personal name. Wallpaper was AI edited from a user-supplied Fedora wallpaper and upscaled; Fedora marks remain their owners' trademarks. The source image's original licensing was not established in this session; review that before redistributing the wallpaper outside this personal fork.
 

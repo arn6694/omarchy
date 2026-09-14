@@ -10,11 +10,16 @@ with tempfile.TemporaryDirectory() as d:
     p=mock/'omarchy-hyprland-session-locked';p.write_text('#!/bin/bash\nexit "${TEST_LOCKED:-1}"\n');p.chmod(0o755)
     p=mock/'omarchy-plugin-clone';p.write_text('#!/bin/bash\nmkdir -p "$HOME/.config/omarchy/plugins/$USER.lock"\n');p.chmod(0o755)
     env=dict(os.environ,HOME=d,PATH=str(mock)+':'+os.environ['PATH'])
+    layouts=home/'.local/state/omarchy/workspace-layouts'
+    layouts.mkdir(parents=True)
+    (layouts/'1.lua').write_text('scrolling override')
     script=repo/'install/fedora/apply-workstation.sh'
     for _ in range(2): subprocess.run(['bash',str(script)],env=env,check=True,stdout=subprocess.DEVNULL)
     s=(hypr/'hyprland.lua').read_text()
     assert s.count('require("hypr.omadora-bindings")')==1
     assert 'lua:omadora-equal' in s
+    assert not (layouts/'1.lua').exists()
+    assert any(p.read_text()=='scrolling override' for p in (home/'.local/state/omarchy/backups').glob('*/.local/state/omarchy/workspace-layouts/1.lua'))
     assert (home/'.config/nvim/lazy-lock.json').exists()
     assert len(list((home/'.local/state/omarchy/backups').iterdir()))==2
     result=subprocess.run(['bash',str(script)],env=dict(env,TEST_LOCKED='0'),capture_output=True)

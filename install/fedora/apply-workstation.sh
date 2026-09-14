@@ -12,7 +12,7 @@ omarchy-hyprland-session-locked || lock_status=$?
 [[ $lock_status == 1 ]] || { echo 'Unlock the desktop and confirm Hyprland is running before applying the profile.' >&2; exit 1; }
 backup="$HOME/.local/state/omarchy/backups/$(date +%Y%m%d-%H%M%S)-workstation-$$"
 mkdir -p "$backup" "$HOME/.config/hypr" "$HOME/.local/bin"
-for entry in .config/hypr .config/nvim .config/omarchy .config/xdg-terminals.list .wezterm.lua; do
+for entry in .config/hypr .config/nvim .config/omarchy .config/xdg-terminals.list .wezterm.lua .local/state/omarchy/workspace-layouts; do
   if [[ -e $HOME/$entry ]]; then
     mkdir -p "$backup/$(dirname "$entry")"
     cp -a "$HOME/$entry" "$backup/$entry"
@@ -36,6 +36,11 @@ for source,target in [('equal-layout.lua','equal-layout.lua'),('bindings.lua','o
     shutil.copy2(profile/source,hypr/target)
 shutil.copy2(profile/'wezterm.lua',home/'.wezterm.lua')
 shutil.copytree(profile/'nvim',home/'.config/nvim',dirs_exist_ok=True)
+# Applying the profile deliberately resets saved per-workspace layouts.
+layouts=home/'.local/state/omarchy/workspace-layouts'
+layouts.mkdir(parents=True, exist_ok=True)
+for saved in layouts.glob('*.lua'):
+    saved.unlink()
 # Theme renderer may replace this file later; maintain the upstream theme hook.
 (home/'.config/xdg-terminals.list').write_text('org.wezfurlong.wezterm.desktop\nfoot.desktop\n')
 PY
