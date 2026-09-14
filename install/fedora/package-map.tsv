@@ -229,7 +229,7 @@ fprintd-pam	fprintd-pam	verified	optional
 freerdp	freerdp	verified	optional
 fwupd	fwupd	verified	optional
 ghostty	-	omitted: no verified RPM in selected repositories	optional
-google-chrome	-	omitted: no verified RPM in selected repositories	optional
+google-chrome	google-chrome-stable	verified: official Google RPM repository	optional
 grok-bot	-	omitted: no verified RPM in selected repositories	optional
 helix	helix	verified	optional
 hermes-desktop	-	omitted: no verified RPM in selected repositories	optional

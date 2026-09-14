@@ -13,7 +13,7 @@ description: >
 
 # Omarchy Skill
 
-Manage [Omarchy](https://omarchy.org/) Linux systems - a beautiful, fun, agentic Arch Linux distribution with Hyprland.
+Manage Omadora, the Fedora RPM-based port of the Omarchy Hyprland desktop. Use DNF and RPM for system packages.
 
 This skill is for end-user customization on installed systems.
 It is not for contributing to Omarchy source code.
@@ -99,7 +99,7 @@ Omarchy is built on:
 
 | Component | Purpose | Config Location |
 |-----------|---------|-----------------|
-| **Arch Linux** | Base OS | `/etc/`, `~/.config/` |
+| **Fedora Linux** | Base OS | `/etc/`, `~/.config/` |
 | **Hyprland** | Wayland compositor/WM | `~/.config/hypr/` |
 | **Omarchy shell** | Status bar + notifications (Quickshell) | `~/.config/omarchy/shell.json` |
 | **Launcher/menus** | Quickshell menu | `~/.config/omarchy/extensions/omarchy-menu.jsonc` |

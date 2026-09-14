@@ -4,7 +4,7 @@ Read this only after concluding that a crash is genuinely Omarchy's to fix.
 
 ## Is it even Omarchy's bug?
 
-Be strict here. Omarchy is a configuration layer over Arch Linux, so a crash
+Be strict here. Omarchy is a configuration layer over Fedora Linux, so a crash
 inside a third-party application — a file manager, a browser, a GNOME or Qt
 library — is almost always an upstream bug in **that** project, not in Omarchy.
 

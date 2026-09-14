@@ -35,3 +35,9 @@ The lock view uses the supplied 3840×2160 red-fedora wallpaper, an unblurred ba
 The running machine launched WezTerm, Files, Neovim, ChatGPT, Chrome, Claude, Grok Bot, Hermes and Obsidian. Four tiled windows measured 941×508. The user approved the lock preview, AM/PM clock, wallpaper, and name removal. NetworkManager, NVIDIA rendering, PipeWire, WirePlumber and the Hyprland portal were active.
 
 Audio exposed only Dummy Output with analog ports reporting unavailable; audible output was not verified. Hermes provider setup and Obsidian NAS mapping remain outstanding. No NAS credentials or machine-specific storage resizing is automated. A temporary `--exclude=hyprtoolkit` avoided a COPR package mismatch; no permanent version pin is installed. A fresh-machine installation of this optional profile has not yet been validated.
+
+## September 14 follow-up audit
+
+All declared runtime dependencies are installed; DNF's package consistency check passes. Enabled repositories are Fedora 44, Fedora updates/Cisco codecs, RPM Fusion, the Hyprland COPR, and Google Chrome. Pacman, yay, and paru are absent. Fedora menus invoke DNF/RPM helpers; unsupported upstream package choices are hidden or rejected by the package map. The package menu now uses Fedora glyphs, and absent terminals are hidden from default-terminal selection. Chrome maps to its installed `google-chrome-stable` RPM. Chromium is no longer automatically included alongside Chrome.
+
+Standalone WezTerm and native AI/Obsidian bundles remain outside RPM ownership; this is not a strictly RPM-only desktop. No application bundles or account data were removed. Audio still exposes only Dummy Output. The NVIDIA settings autostart recorded a failure, although the NVIDIA driver and compositor are running. These are outstanding runtime issues, not evidence of a missing declared package.
