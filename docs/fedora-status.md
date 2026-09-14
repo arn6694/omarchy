@@ -5,7 +5,7 @@
 - Fedora Server 44, x86_64, installed on a separate NVMe drive.
 - Development target hardware: Ryzen 7 4700G, AMD Radeon integrated graphics, GeForce RTX 3050.
 - Upstream: `https://github.com/omacom/omarchy`, branch `quattro`, commit `b679363bed05415771a1b1dc92c6899a908236f7`.
-- Intended GitHub owner: `arn9999`. Remote fork creation and push are pending GitHub authentication.
+- GitHub fork: `arn6694/omarchy`; Fedora branch: `codex/fedora-port`.
 
 ## Implemented locally
 

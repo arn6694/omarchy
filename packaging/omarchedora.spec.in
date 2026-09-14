@@ -3,7 +3,7 @@ Version:        0.1.0
 Release:        1%{?dist}
 Summary:        Omarchy desktop adapted for Fedora Server 44
 License:        MIT
-URL:            https://github.com/arn9999/Omarchedora
+URL:            https://github.com/arn6694/omarchy
 Source0:        omarchedora-%{version}.tar.gz
 BuildArch:      noarch
 Requires:       hyprland >= 0.56.2

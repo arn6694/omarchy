@@ -4,7 +4,7 @@ An experimental Fedora Server 44 port of Omarchy's `quattro` branch for x86_64 P
 
 **Status: source port in progress. No Fedora boot test or RPM build has completed yet.** See [build status](docs/fedora-status.md), [package mappings](docs/fedora-package-map.md), [omitted features](docs/fedora-omitted-features.md), and [omitted install menus](docs/fedora-omitted-menu.md).
 
-The intended fork owner is `arn9999`; remote creation is pending authentication. Upstream history is preserved locally.
+The Omarchedora fork is [arn6694/omarchy](https://github.com/arn6694/omarchy), with the Fedora port on `codex/fedora-port`. Upstream history is preserved.
 
 On a disposable Fedora Server 44 x86_64 installation:
 
