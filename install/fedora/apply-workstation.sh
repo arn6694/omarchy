@@ -21,7 +21,7 @@ done
 export OMADORA_PROFILE="$profile"
 python3 - <<'PY'
 from pathlib import Path
-import os,shutil
+import os,shutil,json
 home=Path.home(); profile=Path(os.environ['OMADORA_PROFILE']); hypr=home/'.config/hypr'
 config=hypr/'hyprland.lua'
 s=config.read_text()
@@ -36,6 +36,12 @@ for source,target in [('equal-layout.lua','equal-layout.lua'),('bindings.lua','o
     shutil.copy2(profile/source,hypr/target)
 shutil.copy2(profile/'wezterm.lua',home/'.wezterm.lua')
 shutil.copytree(profile/'nvim',home/'.config/nvim',dirs_exist_ok=True)
+# Keep the display awake for twenty minutes of inactivity.
+shell_config=home/'.config/omarchy/shell.json'
+shell_config.parent.mkdir(parents=True, exist_ok=True)
+settings=json.loads(shell_config.read_text()) if shell_config.exists() else {'version': 1}
+settings.setdefault('idle', {}).update(screensaver=1200, lock=1200)
+shell_config.write_text(json.dumps(settings, indent=2)+'\n')
 # Applying the profile deliberately resets saved per-workspace layouts.
 layouts=home/'.local/state/omarchy/workspace-layouts'
 layouts.mkdir(parents=True, exist_ok=True)
