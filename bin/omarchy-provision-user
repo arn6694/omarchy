@@ -1,5 +1,6 @@
 #!/bin/bash
 # omarchy:summary=Set up Omarchedora configuration for the current Fedora user
+# omarchy:hidden=true
 
 set -euo pipefail
 if [[ ${1:-} != "--force" && -f $HOME/.local/state/omarchy/fedora-user-ready ]]; then

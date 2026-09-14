@@ -1,5 +1,6 @@
 #!/bin/bash
 # omarchy:summary=Configure Fedora NVIDIA graphics packages when requested
+# omarchy:hidden=true
 
 set -euo pipefail
 case "${1:-}" in

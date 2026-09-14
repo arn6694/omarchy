@@ -1,5 +1,6 @@
 #!/bin/bash
 # omarchy:summary=Apply Fedora system configuration
+# omarchy:hidden=true
 
 set -euo pipefail
 exec bash "$OMARCHY_PATH/install/fedora/setup-system.sh" "$@"
