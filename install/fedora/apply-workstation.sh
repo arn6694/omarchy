@@ -36,11 +36,11 @@ for source,target in [('equal-layout.lua','equal-layout.lua'),('bindings.lua','o
     shutil.copy2(profile/source,hypr/target)
 shutil.copy2(profile/'wezterm.lua',home/'.wezterm.lua')
 shutil.copytree(profile/'nvim',home/'.config/nvim',dirs_exist_ok=True)
-# Keep the display awake for twenty minutes of inactivity.
+# Lock after five minutes; display blanking is configured separately below.
 shell_config=home/'.config/omarchy/shell.json'
 shell_config.parent.mkdir(parents=True, exist_ok=True)
 settings=json.loads(shell_config.read_text()) if shell_config.exists() else {'version': 1}
-settings.setdefault('idle', {}).update(screensaver=1200, lock=1200)
+settings.setdefault('idle', {}).update(screensaver=300, lock=300)
 shell_config.write_text(json.dumps(settings, indent=2)+'\n')
 # Applying the profile deliberately resets saved per-workspace layouts.
 layouts=home/'.local/state/omarchy/workspace-layouts'
@@ -51,13 +51,22 @@ for saved in layouts.glob('*.lua'):
 (home/'.config/xdg-terminals.list').write_text('org.wezfurlong.wezterm.desktop\nfoot.desktop\n')
 PY
 install -m755 "$profile/uwsm-app" "$HOME/.local/bin/uwsm-app"
-# The user clone inherits the installed lock service; only its view is changed.
+# The user clone inherits authentication; adjust only its display-blank timer.
 clone="${USER:-$(id -un)}.lock"
 clone_dir="$HOME/.config/omarchy/plugins/$clone"
 if [[ ! -d $clone_dir ]]; then
   omarchy-plugin-clone omarchy.lock
 fi
 install -m644 "$profile/lock/LockView.qml" "$profile/lock/wallpaper.png" "$clone_dir/"
+python3 - "$clone_dir/Service.qml" <<'PYLOCK'
+from pathlib import Path
+import re,sys
+p=Path(sys.argv[1]); source=p.read_text()
+updated,count=re.subn(r'(id: idleBlankTimer\s+interval: )\d+', r'\g<1>1200000', source)
+if count != 1:
+    raise SystemExit('Expected lock display timer not found; lock service unchanged.')
+p.write_text(updated)
+PYLOCK
 omarchy-plugin-enable "$clone"
 omarchy-font-set 'JetBrainsMono Nerd Font'
 hyprctl reload

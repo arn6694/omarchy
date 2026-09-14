@@ -8,7 +8,7 @@ with tempfile.TemporaryDirectory() as d:
     for name in ['omarchy-plugin-enable','omarchy-font-set','hyprctl','omarchy-restart-shell','update-desktop-database']:
         p=mock/name;p.write_text('#!/bin/bash\nexit 0\n');p.chmod(0o755)
     p=mock/'omarchy-hyprland-session-locked';p.write_text('#!/bin/bash\nexit "${TEST_LOCKED:-1}"\n');p.chmod(0o755)
-    p=mock/'omarchy-plugin-clone';p.write_text('#!/bin/bash\nmkdir -p "$HOME/.config/omarchy/plugins/$USER.lock"\n');p.chmod(0o755)
+    p=mock/'omarchy-plugin-clone';p.write_text('#!/bin/bash\nmkdir -p "$HOME/.config/omarchy/plugins/$USER.lock"\nprintf "id: idleBlankTimer\\n    interval: 5000\\n" > "$HOME/.config/omarchy/plugins/$USER.lock/Service.qml"\n');p.chmod(0o755)
     env=dict(os.environ,HOME=d,PATH=str(mock)+':'+os.environ['PATH'])
     layouts=home/'.local/state/omarchy/workspace-layouts'
     layouts.mkdir(parents=True)

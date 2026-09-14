@@ -11,7 +11,7 @@ The optional profile captures the Fedora workstation customization completed Sep
 5. Install any desired native AI desktop apps and Obsidian separately from their trusted distributors, then register each using `bash install/fedora/register-desktop.sh APP /absolute/path/to/installed/executable`. Supported APP values: `chatgpt`, `claude-desktop`, `grok-bot`, `hermes-desktop`, `obsidian`, `wezterm`. This creates native launch wrappers and desktop entries; it does not download those proprietary applications or include account state. For WezTerm, step 4 already registers it.
 6. From an unlocked, running Omadora desktop, run `bash install/fedora/apply-workstation.sh`. This backs up existing configuration, applies the shortcuts/layout, WezTerm and Neovim config, and clones the installed lock service with the personalized view. Existing extra Neovim files are retained. Open Neovim to let Lazy install its recorded plugins; network access is needed on first use.
 
-The profile can be reapplied. It changes user preferences, including keyboard shortcuts and editor settings; use the printed backup directory to restore them. Run it after logging in, not during a headless install. The lock service and authentication implementation come from the installed Omarchy version; only the visual component is replaced. Do not restart the shell while locked.
+The profile can be reapplied. It changes user preferences, including keyboard shortcuts and editor settings; use the printed backup directory to restore them. Run it after logging in, not during a headless install. The lock service and authentication implementation come from the installed Omarchy version; the visual component is replaced and the display-blank timer is set to twenty minutes. Do not restart the shell while locked.
 
 ## Shortcuts and layout
 
@@ -42,4 +42,4 @@ All declared runtime dependencies are installed; DNF's package consistency check
 
 Standalone WezTerm and native AI/Obsidian bundles remain outside RPM ownership; this is not a strictly RPM-only desktop. No application bundles or account data were removed. Audio still exposes only Dummy Output. The NVIDIA settings autostart recorded a failure, although the NVIDIA driver and compositor are running. These are outstanding runtime issues, not evidence of a missing declared package.
 
-The workstation profile waits 20 minutes of inactivity before automatic screensaver/lock activation and subsequent display power-off. Manual locking retains the lock service’s normal display blanking behavior.
+The workstation profile locks after 5 minutes of inactivity. Once locked (automatically or manually), the monitor stays on for 20 minutes without activity on the lock screen before powering off. The wallpaper uses a plain black hat band without a bow.
