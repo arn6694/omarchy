@@ -30,3 +30,6 @@ o.window("org\\.wezfurlong\\.wezterm", { tag = "+terminal" })
 
 -- Launch Steam or bring its library forward.
 o.rebind("SUPER + SHIFT + S", "Steam", { launch = "/usr/bin/steam steam://open/games" })
+
+-- Make power actions discoverable in the shortcut search.
+o.rebind("SUPER + ESCAPE", "System menu: Logout, Reboot, Shutdown", "omarchy-menu toggle system")
