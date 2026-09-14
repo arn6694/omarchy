@@ -43,3 +43,5 @@ All declared runtime dependencies are installed; DNF's package consistency check
 Standalone WezTerm and native AI/Obsidian bundles remain outside RPM ownership; this is not a strictly RPM-only desktop. No application bundles or account data were removed. Audio still exposes only Dummy Output. The NVIDIA settings autostart recorded a failure, although the NVIDIA driver and compositor are running. These are outstanding runtime issues, not evidence of a missing declared package.
 
 The workstation profile locks after 5 minutes of inactivity. Once locked (automatically or manually), the monitor stays on for 20 minutes without activity on the lock screen before powering off. The wallpaper uses a plain black hat band without a bow.
+
+Steam startup exposed a missing Xwayland dependency (`Unable to open X11 display`). The Fedora base and RPM runtime requirements now include `xorg-x11-server-Xwayland`. Existing sessions started without Xwayland may need a logout/login after installing it.

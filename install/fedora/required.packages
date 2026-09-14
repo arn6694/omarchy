@@ -25,3 +25,4 @@ xdg-desktop-portal-hyprland
 xdg-terminal-exec
 perl-JSON-PP
 python3-pyxdg
+xorg-x11-server-Xwayland
