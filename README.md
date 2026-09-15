@@ -1,4 +1,4 @@
-# Omadora
+# Omedora
 
 An experimental Fedora Server 44 port of Omarchy's `quattro` branch for x86_64 PCs. The desktop keeps Omarchy's key assignments, including **Super+K / Command+K** for its interactive cheat sheet.
 
