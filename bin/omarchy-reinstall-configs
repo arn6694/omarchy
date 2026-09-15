@@ -2,4 +2,4 @@
 # omarchy:summary=Back up and restore Omadora Fedora user defaults
 
 set -euo pipefail
-exec bash "$OMARCHY_PATH/install/fedora/setup-user.sh"
+exec bash "$OMARCHY_PATH/install/fedora/setup-user.sh" --force

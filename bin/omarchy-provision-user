@@ -6,4 +6,4 @@ set -euo pipefail
 if [[ ${1:-} != "--force" && -f $HOME/.local/state/omarchy/fedora-user-ready ]]; then
   exit 0
 fi
-exec bash "$OMARCHY_PATH/install/fedora/setup-user.sh"
+exec bash "$OMARCHY_PATH/install/fedora/setup-user.sh" "$@"

@@ -45,3 +45,9 @@ Standalone WezTerm and native AI/Obsidian bundles remain outside RPM ownership; 
 The workstation profile locks after 5 minutes of inactivity. Once locked (automatically or manually), the monitor stays on for 20 minutes without activity on the lock screen before powering off. The wallpaper uses a plain black hat band without a bow.
 
 Steam startup exposed a missing Xwayland dependency (`Unable to open X11 display`). The Fedora base and RPM runtime requirements now include `xorg-x11-server-Xwayland`. Existing sessions started without Xwayland may need a logout/login after installing it.
+
+## Login reset recovery and login screen
+
+An interrupted first-login setup left `fedora-user-ready` absent and repeatedly copied defaults over user preferences. User provisioning now skips existing configuration directories unless `--force` is explicit, preserves an existing theme selection, and treats browser-default failures as nonfatal. Explicit `omarchy-reinstall-configs` still backs up and resets defaults. `test/fedora-provision-preserve.py` checks interrupted/repeated setup without changing the live home directory.
+
+The optional root-run `install/fedora/setup-login.sh` installs the Fedora X11/libinput SDDM greeter and the Omadora theme, derived from SDDM's MIT-licensed Maldives theme. It uses the red Fedora wallpaper, a wider session selector, larger input controls, and a 12-hour clock. It remembers the last user/session and does not enable automatic login. Only the greeter uses X11; the user desktop remains Wayland. The script backs up replaced files under `/var/lib/omadora/login-backups`, retains the old backend's supporting dependencies, and does not restart SDDM or end the current session. The theme was tested in greeter preview mode; physical mouse operation at the real greeter must be checked at the next logout.
