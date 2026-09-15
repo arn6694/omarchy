@@ -59,7 +59,7 @@ This is Arch, which runs a public debuginfod server:
 core=$(mktemp -t crash-XXXXXX.core)
 trap 'rm -f "$core"' EXIT
 coredumpctl dump <pid> --output="$core"
-DEBUGINFOD_URLS="https://debuginfod.archlinux.org" \
+DEBUGINFOD_URLS="https://debuginfod.fedoraproject.org" \
   gdb -q <executable> "$core" \
   -batch -ex 'set debuginfod enabled on' -ex 'bt'
 ```

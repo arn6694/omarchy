@@ -5,7 +5,9 @@
 
 set -e
 
-mapfile -t orphans < <(pacman -Qtdq 2>/dev/null || true)
+orphan_names=$(dnf -q repoquery --installed --unneeded --queryformat '%{name}\n')
+[[ -n $orphan_names ]] || exit 0
+mapfile -t orphans <<< "$orphan_names"
 (( ${#orphans[@]} )) || exit 0
 
 echo -e "\e[32m\nOrphan system packages\e[0m"
@@ -25,5 +27,5 @@ if ! gum confirm --default=false "Remove ${#orphans[@]} orphaned package(s)?"; t
 fi
 
 echo -e "\e[32m\nRemoving orphan system packages\e[0m"
-sudo pacman -Rns "${orphans[@]}"
+sudo dnf remove -- "${orphans[@]}"
 echo

@@ -64,14 +64,11 @@ setup_sshd() {
 }
 
 open_firewall() {
-  if omarchy-cmd-missing ufw; then
-    echo "UFW is not installed; skipping firewall rule."
-    return
-  fi
-
-  echo "Opening the SSH port in the firewall (rate limited against brute force)..."
-  sudo ufw limit 22/tcp comment "omarchy-sshd" >/dev/null
-  sudo ufw reload >/dev/null
+  omarchy-pkg-add firewalld
+  sudo systemctl enable --now firewalld
+  echo "Allowing the SSH service through Fedora's firewall..."
+  sudo firewall-cmd --permanent --add-service=ssh
+  sudo firewall-cmd --add-service=ssh
 }
 
 valid_key() {

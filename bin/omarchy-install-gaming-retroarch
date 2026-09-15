@@ -47,7 +47,7 @@ set_cfg() {
 set_cfg rgui_browser_directory "$HOME/Games/roms"
 set_cfg system_directory "$HOME/Games/bios"
 
-# Point at the cores and assets installed by pacman
+# Point at the cores and assets installed by RPM
 set_cfg libretro_directory "/usr/lib/libretro"
 set_cfg libretro_info_path "/usr/share/libretro/info"
 set_cfg overlay_directory "/usr/share/libretro/overlays"

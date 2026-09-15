@@ -2,3 +2,7 @@
 # Python bytecode (orchestrator)
 __pycache__/
 *.pyc
+
+# Local RPM output and complete downloaded metadata (selected evidence is tracked).
+build/
+docs/fedora-package-catalog.json

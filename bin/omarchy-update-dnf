@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# omarchy:summary=Run a Fedora package transaction in a system scope
+# omarchy:hidden=true
+# omarchy:args=<dnf-arguments...>
+# omarchy:requires-sudo=true
+
+set -euo pipefail
+scope=()
+[[ ! -d /run/systemd/system ]] || scope=(systemd-run --scope --quiet --collect)
+if (( EUID == 0 )); then
+  exec "${scope[@]}" dnf "$@"
+else
+  exec sudo "${scope[@]}" dnf "$@"
+fi

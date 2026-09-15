@@ -1,21 +1,38 @@
 #!/bin/bash
 
-# omarchy:summary=Install Arch packages if they are missing
+# omarchy:summary=Install Fedora RPM packages if they are missing
 # omarchy:args=<packages...>
 # omarchy:examples=omarchy pkg add jq ripgrep
 # omarchy:requires-sudo=true
 
+set -euo pipefail
+
+if (( $# == 0 )); then
+  echo "Usage: omarchy pkg add <packages...>" >&2
+  exit 2
+fi
+
+for pkg in "$@"; do
+  if [[ ! $pkg =~ ^[a-zA-Z0-9][a-zA-Z0-9+_.-]*$ ]]; then
+    echo "Expected an RPM package name: $pkg" >&2
+    exit 2
+  fi
+done
+
+resolved=$(omarchy-pkg-resolve "$@") || exit $?
+mapfile -t packages <<< "$resolved"
+set -- "${packages[@]}"
+
 if omarchy-pkg-missing "$@"; then
   if (( EUID == 0 )); then
-    pacman -S --noconfirm --needed "$@" || exit 1
+    dnf -y install -- "$@"
   else
-    sudo pacman -S --noconfirm --needed "$@" || exit 1
+    sudo dnf -y install -- "$@"
   fi
 fi
 
 for pkg in "$@"; do
-  # Secondary check to handle states where pacman doesn't actually register an error
-  if ! pacman -Q "$pkg" &>/dev/null; then
+  if ! rpm -q -- "$pkg" &>/dev/null; then
     echo -e "\033[31mError: Package '$pkg' did not install\033[0m" >&2
     exit 1
   fi

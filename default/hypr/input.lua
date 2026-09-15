@@ -21,8 +21,8 @@ local function read_vconsole()
   return values
 end
 
--- Layouts that can't type Latin letters. Keep in sync with the list in
--- etc/mkinitcpio.conf.d/omarchy_hooks.conf.
+-- Layouts that can't type Latin letters. Fedora manages early-boot keyboard
+-- configuration separately through its system locale and dracut settings.
 local non_latin_layouts =
   " af am ara bd bg by et ge gr il in iq ir kg kh kz la lk mk mm mn mv np rs ru sy th tj ua "
 

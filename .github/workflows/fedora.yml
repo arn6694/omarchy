@@ -1,0 +1,46 @@
+name: Fedora port checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fedora:
+    runs-on: ubuntu-latest
+    container: fedora:44
+    steps:
+      - name: Install build tools
+        run: dnf -y install git rpm-build bash findutils coreutils grep gawk tar gzip nodejs python3 jq util-linux fontconfig
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Trust the mounted checkout in this disposable container
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Preserve upstream hotkeys and cheat sheet
+        run: python3 test/fedora-hotkeys.py
+      - name: Fedora runtime isolation
+        run: python3 test/fedora-runtime.py
+      - name: Shell syntax
+        run: bash test/fedora-syntax.sh
+      - name: DNF helper behavior
+        run: bash test/shell.d/fedora-packages-test.sh
+      - name: CLI regressions
+        run: bash test/cli
+      - name: Build RPM
+        run: bash packaging/build-rpm.sh
+      - name: Install desktop packages in disposable Fedora container
+        shell: bash
+        run: |
+          set -euo pipefail
+          dnf -y install dnf5-plugins
+          dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm
+          dnf -y copr enable nett00n/hyprland
+          mapfile -t packages < <(grep -Ev '^(#|$)' install/fedora/base.packages)
+          dnf -y install build/RPMS/noarch/omarchedora-*.rpm "${packages[@]}"
+          rpm -q omarchedora hyprland quickshell
+          OMARCHY_PATH=/usr/share/omarchy omarchy commands --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: omarchedora-fedora44
+          path: build/RPMS/noarch/*.rpm

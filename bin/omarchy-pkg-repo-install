@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# omarchy:summary=Choose packages from enabled Fedora repositories
+# omarchy:requires-sudo=true
+
+exec omarchy-pkg-install "$@"

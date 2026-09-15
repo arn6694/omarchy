@@ -1,0 +1,61 @@
+Name:           omarchedora
+Version:        0.1.0
+Release:        1%{?dist}
+Summary:        Omarchy desktop adapted for Fedora Server 44
+License:        MIT
+URL:            https://github.com/arn6694/omarchy
+Source0:        omarchedora-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       hyprland >= 0.56.2
+Requires:       quickshell >= 0.3.1
+Requires:       dracut
+@FEDORA_REQUIRES@
+
+%description
+Omadora preserves the Omarchy quattro desktop and hotkey configuration
+while using Fedora RPM packages. Some upstream features are omitted; consult
+the packaged Fedora port documentation before installation.
+
+%prep
+%setup -q
+
+%build
+# Scripts and desktop assets require no compilation.
+
+%install
+mkdir -p %{buildroot}%{_datadir}/omarchy %{buildroot}%{_bindir}
+cp -a bin config default shell themes applications version icon.txt icon.png logo.txt logo.svg %{buildroot}%{_datadir}/omarchy/
+mkdir -p %{buildroot}%{_datadir}/omarchy/install
+cp -a install/fedora install/helpers %{buildroot}%{_datadir}/omarchy/install/
+rm -rf %{buildroot}%{_datadir}/omarchy/default/pacman
+rm -rf %{buildroot}%{_datadir}/omarchy/default/libalpm
+rm -rf %{buildroot}%{_datadir}/omarchy/default/limine
+rm -rf %{buildroot}%{_datadir}/omarchy/config/omarchy/hooks/pre-refresh-pacman.d
+rm -f %{buildroot}%{_datadir}/omarchy/bin/omarchy-system-factory-reset-finish
+install -m755 install/fedora/workstation/uwsm-app %{buildroot}%{_bindir}/uwsm-app
+chmod 755 %{buildroot}%{_datadir}/omarchy/bin/*
+for command in %{buildroot}%{_datadir}/omarchy/bin/*; do
+  ln -s %{_datadir}/omarchy/bin/$(basename "$command") %{buildroot}%{_bindir}/$(basename "$command")
+done
+ln -s %{_datadir}/omarchy/bin/omarchy %{buildroot}%{_bindir}/omarchedora
+install -Dm644 etc/profile.d/omarchy.sh %{buildroot}%{_sysconfdir}/profile.d/omarchedora.sh
+install -Dm644 default/uwsm/env.d/10-omarchy %{buildroot}%{_datadir}/uwsm/env.d/10-omarchy
+install -Dm644 default/wayland-sessions/omarchy.desktop %{buildroot}%{_datadir}/wayland-sessions/omarchedora.desktop
+sed -i 's/Omarchy/Omadora/g' %{buildroot}%{_datadir}/wayland-sessions/omarchedora.desktop
+install -Dm644 default/fonts/omarchy/omarchy.ttf %{buildroot}%{_datadir}/fonts/omarchedora/omarchy.ttf
+
+%files
+%{_bindir}/uwsm-app
+%license LICENSE
+%doc docs/fedora-package-map.md docs/fedora-omitted-features.md docs/fedora-omitted-menu.md install/fedora/README.md
+%{_bindir}/omarchy*
+%{_bindir}/omarchedora
+%{_datadir}/omarchy
+%{_datadir}/uwsm/env.d/10-omarchy
+%{_datadir}/wayland-sessions/omarchedora.desktop
+%{_datadir}/fonts/omarchedora
+%config(noreplace) %{_sysconfdir}/profile.d/omarchedora.sh
+
+%changelog
+* Sun Sep 13 2026 Omarchedora contributors - 0.1.0-1
+- Initial Fedora Server 44 port, based on upstream quattro.

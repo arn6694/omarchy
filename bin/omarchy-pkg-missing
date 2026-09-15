@@ -3,8 +3,11 @@
 # omarchy:summary=Returns true if any of the named packages are missing from the system (or false if they're all there).
 # omarchy:args=<packages...>
 
-for pkg in "$@"; do
-  if ! pacman -Q "$pkg" &>/dev/null; then
+(( $# > 0 )) || exit 1
+resolved=$(omarchy-pkg-resolve "$@" 2>/dev/null) || exit 0
+mapfile -t packages <<< "$resolved"
+for pkg in "${packages[@]}"; do
+  if ! rpm -q -- "$pkg" &>/dev/null; then
     exit 0
   fi
 done

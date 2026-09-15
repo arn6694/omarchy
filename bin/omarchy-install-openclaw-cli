@@ -4,7 +4,7 @@
 # omarchy:args=[--check|--now]
 # omarchy:requires-sudo=true
 
-# OpenClaw is not a mise tool: the openclaw pacman package is the one OpenClaw
+# OpenClaw is not a mise tool: the openclaw RPM package is the one OpenClaw
 # installation on the machine — the CLI, the gateway, and the Install > AI web
 # app all share it, and the fast ring keeps it current. The default-agent flow
 # talks to that package through the same --check/--now contract mise-backed

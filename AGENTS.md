@@ -80,8 +80,8 @@ Use these instead of raw shell commands:
 
 - `omarchy-cmd-missing` / `omarchy-cmd-present` - check for commands
 - `omarchy-pkg-missing` / `omarchy-pkg-present` - check for packages (don't use these if you can just use `omarchy-pkg-add`/`omarchy-pkg-drop`)
-- `omarchy-pkg-add` - install packages (handles both pacman and AUR)
-- `omarchy-pkg-drop` - remove packages; use this instead of raw `pacman -R*`
+- `omarchy-pkg-add` - install mapped Fedora RPM packages through DNF
+- `omarchy-pkg-drop` - remove packages; use this instead of raw `dnf remove`
 - `omarchy-notification-send` - send desktop notifications; do not call `notify-send` directly
 - `omarchy-hw-asus-rog` - detect ASUS ROG hardware (and similar `hw-*` commands)
 
